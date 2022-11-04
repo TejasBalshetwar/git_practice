@@ -16,3 +16,4 @@ The remote repository is the one where you want to push your code.
 13) To create a new branch use: git branch <branchname>
 14) To switch to a branch use: git checkout <branchname>
 15) to create and switch to a new branch use: git checkout -b <branchname>
+16) To merge a branch use: git merge <branchname>

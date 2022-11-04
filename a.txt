@@ -1,0 +1,357 @@
+Microsoft Windows [Version 10.0.22000.1098]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\91937\Desktop\Training\Git Training>git --version
+git version 2.37.3.windows.1
+
+C:\Users\91937\Desktop\Training\Git Training>git init
+Initialized empty Git repository in C:/Users/91937/Desktop/Training/Git Training/.git/
+
+C:\Users\91937\Desktop\Training\Git Training>git config --global user.name "Tejas Balshetwar" 
+
+C:\Users\91937\Desktop\Training\Git Training>git config --global user.email "tejas8948@gmail.com"
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\91937\Desktop\Training\Git Training>git add README.md
+
+C:\Users\91937\Desktop\Training\Git Training>git status        
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+
+C:\Users\91937\Desktop\Training\Git Training>git add a.txt    
+
+C:\Users\91937\Desktop\Training\Git Training>git status    
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   a.txt
+
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   a.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+C:\Users\91937\Desktop\Training\Git Training>git add .
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   a.txt
+
+
+C:\Users\91937\Desktop\Training\Git Training>git commit -m "First Commit"
+[master (root-commit) f667648] First Commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 README.md
+ create mode 100644 a.txt
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+* master
+
+C:\Users\91937\Desktop\Training\Git Training>git branch -M main 
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+* main
+
+C:\Users\91937\Desktop\Training\Git Training>git remote add origin https://github.com/TejasBalshetwar/git_practice.git
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+* main
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\91937\Desktop\Training\Git Training>git remote -v
+origin  https://github.com/TejasBalshetwar/git_practice.git (fetch)
+origin  https://github.com/TejasBalshetwar/git_practice.git (push)
+
+C:\Users\91937\Desktop\Training\Git Training>git push -u origin main
+info: please complete authentication in your browser...
+
+C:\Users\91937\Desktop\Training\Git Training>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 281 bytes | 281.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TejasBalshetwar/git_practice.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\91937\Desktop\Training\Git Training>git add README.md
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+C:\Users\91937\Desktop\Training\Git Training>git commit -am "Some instructions were added"
+[main 3e8c5e5] Some instructions were added
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+C:\Users\91937\Desktop\Training\Git Training>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 517 bytes | 517.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TejasBalshetwar/git_practice.git
+   f667648..3e8c5e5  main -> main
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\91937\Desktop\Training\Git Training>git log
+commit 3e8c5e5ef745439716b3fa5c128a89a45f3c14d3 (HEAD -> main, origin/main)
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:49:23 2022 +0530
+
+    Some instructions were added
+
+commit f66764801c61c32204ff1576ebb6c9dd6f5d59be
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:40:08 2022 +0530
+
+
+C:\Users\91937\Desktop\Training\Git Training>git add .
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+C:\Users\91937\Desktop\Training\Git Training>git commit -m "added information about remote repo" 
+[main 66db821] added information about remote repo
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\91937\Desktop\Training\Git Training>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 462 bytes | 231.00 KiB/s, done.
+commit 66db82157a490e26141e57b0fc145d8e78c6e1f5 (HEAD -> main, origin/main)
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:52:39 2022 +0530
+
+    added information about remote repo
+
+commit 3e8c5e5ef745439716b3fa5c128a89a45f3c14d3
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:49:23 2022 +0530
+
+:...skipping...
+commit 66db82157a490e26141e57b0fc145d8e78c6e1f5 (HEAD -> main, origin/main)
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:52:39 2022 +0530
+
+    added information about remote repo
+
+commit 3e8c5e5ef745439716b3fa5c128a89a45f3c14d3
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:49:23 2022 +0530
+
+    Some instructions were added
+
+commit f66764801c61c32204ff1576ebb6c9dd6f5d59be
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:40:08 2022 +0530
+
+    First Commit
+~
+~
+~
+~
+~
+
+C:\Users\91937\Desktop\Training\Git Training>git add .
+
+C:\Users\91937\Desktop\Training\Git Training>git commit -a
+Aborting commit due to empty commit message.
+
+C:\Users\91937\Desktop\Training\Git Training>git commit .
+[main d42526a] do it
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\91937\Desktop\Training\Git Training>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TejasBalshetwar/git_practice.git
+   66db821..d42526a  main -> main
+
+C:\Users\91937\Desktop\Training\Git Training>git log
+commit d42526a503aad4fc6cb8f3a8e08a36dfbebb803c (HEAD -> main, origin/main)
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:55:59 2022 +0530
+
+    do it
+
+commit 66db82157a490e26141e57b0fc145d8e78c6e1f5
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:52:39 2022 +0530
+
+    added information about remote repo
+
+commit 3e8c5e5ef745439716b3fa5c128a89a45f3c14d3
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:49:23 2022 +0530
+
+    Some instructions were added
+
+commit f66764801c61c32204ff1576ebb6c9dd6f5d59be
+Author: Tejas Balshetwar <tejas8948@gmail.com>
+Date:   Fri Nov 4 17:40:08 2022 +0530
+
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+* main
+
+C:\Users\91937\Desktop\Training\Git Training>git branch developer1
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+  developer1
+* main
+
+C:\Users\91937\Desktop\Training\Git Training>git checkout developer1
+Switched to branch 'developer1'
+M       README.md
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch developer1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+* developer1
+  main
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+  developer1
+* main
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+* developer1
+  main
+
+C:\Users\91937\Desktop\Training\Git Training>git add .
+
+C:\Users\91937\Desktop\Training\Git Training>git commit -m "commit in new branch"
+[developer1 712dba0] commit in new branch
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+C:\Users\91937\Desktop\Training\Git Training>git checkout main\      
+error: pathspec 'main\' did not match any file(s) known to git
+
+C:\Users\91937\Desktop\Training\Git Training>git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\91937\Desktop\Training\Git Training>git checkout developer1
+Switched to branch 'developer1'
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+* developer1
+  main
+
+C:\Users\91937\Desktop\Training\Git Training>git branch main      
+fatal: a branch named 'main' already exists
+
+C:\Users\91937\Desktop\Training\Git Training>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\91937\Desktop\Training\Git Training>git merge developer1
+Updating d42526a..712dba0
+Fast-forward
+ README.md | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+C:\Users\91937\Desktop\Training\Git Training>git push origin main
+Everything up-to-date
+
+C:\Users\91937\Desktop\Training\Git Training>git checkout -b developer2
+Switched to a new branch 'developer2'
+
+C:\Users\91937\Desktop\Training\Git Training>git branch
+  developer1
+* developer2
+  main
