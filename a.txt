@@ -355,3 +355,61 @@ C:\Users\91937\Desktop\Training\Git Training>git branch
   developer1
 * developer2
   main
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch developer2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   a.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\91937\Desktop\Training\Git Training>git add app.py
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch developer2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   a.txt
+
+
+C:\Users\91937\Desktop\Training\Git Training>git add .
+
+C:\Users\91937\Desktop\Training\Git Training>git status
+On branch developer2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        modified:   a.txt
+        new file:   app.py
+
+
+C:\Users\91937\Desktop\Training\Git Training>git commit -m "changes in developer 2"
+[developer2 f3bc408] changes in developer 2
+ 3 files changed, 360 insertions(+), 1 deletion(-)
+ create mode 100644 app.py
+
+C:\Users\91937\Desktop\Training\Git Training>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\91937\Desktop\Training\Git Training>git merge developer2
+Updating 712dba0..f3bc408
+Fast-forward
+ README.md |   3 +-
+ a.txt     | 357 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ app.py    |   1 +
+ 3 files changed, 360 insertions(+), 1 deletion(-)
+ create mode 100644 app.py
+

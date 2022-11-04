@@ -13,7 +13,10 @@ The remote repository is the one where you want to push your code.
 10) To see the current branch use: git branch
 11) To see the current status of the repository use: git status
 12) To see the log of the commits use: git log
-13) To create a new branch use: git branch <branchname>
-14) To switch to a branch use: git checkout <branchname>
-15) to create and switch to a new branch use: git checkout -b <branchname>
-16) To merge a branch use: git merge <branchname>
+13) use git log -p to see the changes in the code
+14) To create a new branch use: git branch <branchname>
+15) To switch to a branch use: git checkout <branchname>
+16) to create and switch to a new branch use: git checkout -b <branchname>
+17) To merge a branch use: git merge <branchname>
+18) To delete a branch use: git branch -d <branchname>
+19) To get latest changes from the remote repository use: git pull origin <branchname>
