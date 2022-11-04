@@ -10,3 +10,9 @@
 9) to add a remote repository use: git remote add origin <url> (url ends with .git)
 The remote repository is the one where you want to push your code.
 <br>Now to remote repository is connected to your local repository.
+10) To see the current branch use: git branch
+11) To see the current status of the repository use: git status
+12) To see the log of the commits use: git log
+13) To create a new branch use: git branch <branchname>
+14) To switch to a branch use: git checkout <branchname>
+15) to create and switch to a new branch use: git checkout -b <branchname>
